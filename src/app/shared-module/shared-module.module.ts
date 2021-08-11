@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NavbarComponent } from './navbar/navbar.component';
-import { MatComponentsModule } from '../mat-components/mat-components.module';
 
 
 
@@ -10,8 +9,7 @@ import { MatComponentsModule } from '../mat-components/mat-components.module';
     NavbarComponent
   ],
   imports: [
-    CommonModule,
-    MatComponentsModule
+    CommonModule
   ],
   exports: [
     NavbarComponent

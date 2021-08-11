@@ -46,8 +46,6 @@ input[type="radio"] {
   left: 50%;
   transform: translate(-50%, -50%);
   cursor: pointer;
-  /* width: 22px;
-  height: 22px; */
 }
 .radio-button a {
   position: relative;

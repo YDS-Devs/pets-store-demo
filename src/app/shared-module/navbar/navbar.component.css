@@ -3,7 +3,6 @@
   min-width: 260px;
   height: 100%;
   background: #14a29d;
-  /* font-size: 20px; */
   float: left;
   position: fixed;
   padding-top: 2%;
@@ -11,12 +10,7 @@
 
 a > .nav-icon {
   margin-right: 11%;
-  /* fill: #fff; */
 }
-
-/* a > .nav-icon:target {
-  fill: #000;
-} */
 
 a svg {
   transition: fill 0.5s;
@@ -44,11 +38,11 @@ a:target svg {
   display: block;
   text-decoration: none;
   width: 78%;
-  height: 65px;
-  color: #fdfff4;
+  height: 69px;
+  color: #fff;
   float: right;
   border-radius: 50px 0 0 50px;
-  line-height: 65px;
+  line-height: 69px;
   transition: color 0.5s;
   padding-left: 8.4%;
   text-transform: capitalize;
@@ -56,48 +50,33 @@ a:target svg {
 
 .menu > a:target {
   color: #2a2a2a;
-  background-color: #fdfff4;
+  background-color: #fff;
 }
 
 .menu > a::after,
 .menu > a::before {
   content: "";
   position: absolute;
-  top: -50px;
+  top: -150px;
   right: 0;
-  width: 20px;
-  height: 50px;
-  border-radius: 0 0 25px 0;
+  width: 150px;
+  height: 150px;
+  border-radius: 0 0 50% 0;
   z-index: -1;
 }
 
 .menu > a::before {
   top: auto;
-  bottom: -50px;
-  border-radius: 0 25px 0 0;
+  bottom: -150px;
+  border-radius: 0 50% 0 0;
 }
 
 .menu > a:target:after {
-  box-shadow: 0 25px 0 0 #fdfff4;
+  box-shadow: 0 69px 0 0 #fff;
 }
 
 .menu > a:target:before {
-  box-shadow: 0 -25px 0 0 #fdfff4;
-}
-
-/* .menu > a::after{
-  content: "";
-  position: absolute;
-  width: 300px;
-  height: 300px;
-  border-radius: 0 50% 0 0;
-  top: -50px;
-  right: 0;
-  background-color: red;
-} */
-
-.grid-web {
-  /* background-color: #14a29d; */
+  box-shadow: 0 -69px 0 0 #fff;
 }
 
 .grid-mob {
@@ -126,5 +105,31 @@ a:target svg {
 
   .menu > .footer-buttons {
     margin-top: 30px;
+  }
+
+  .menu > a::after,
+  .menu > a::before {
+    content: "";
+    position: absolute;
+    top: -120px;
+    right: 0;
+    width: 120px;
+    height: 120px;
+    border-radius: 0 0 42% 0;
+    z-index: -1;
+  }
+
+  .menu > a::before {
+    top: auto;
+    bottom: -120px;
+    border-radius: 0 42% 0 0;
+  }
+
+  .menu > a:target:after {
+    box-shadow: 0 45px 0 0 #fff;
+  }
+
+  .menu > a:target:before {
+    box-shadow: 0 -45px 0 0 #fff;
   }
 }

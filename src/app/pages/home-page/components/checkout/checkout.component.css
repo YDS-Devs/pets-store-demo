@@ -21,7 +21,6 @@
 }
 
 #total-price > .checkout {
-  /* width: 38%; */
   width: 211px;
   height: 55px;
   background-color: #18bab4;
@@ -42,7 +41,6 @@
   }
 
   #total-price > .checkout {
-    /* width: 38%; */
     width: 144px;
     height: 45px;
     margin-left: 10%;
