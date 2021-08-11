@@ -1,0 +1,72 @@
+.left-peas {
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+.left-peas > p {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.left-peas > .title {
+  margin-top: 0.5rem;
+}
+.left-peas > .search-box {
+  width: 95.5%;
+  height: 40px;
+  border-radius: 5px;
+  border: 0;
+  outline: none;
+  background-color: #f7f7f7;
+  font-size: 0.75rem;
+  padding-left: 10px;
+}
+
+.radio-button {
+  display: flex;
+}
+
+.radio-button > input {
+  margin-left: 10px;
+}
+
+.radio-button > label {
+  color: #7e7e7e;
+  font-size: 0.9rem;
+}
+
+.radio-button {
+  margin-bottom: 15px;
+}
+
+input[type="radio"] {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  /* width: 22px;
+  height: 22px; */
+}
+.radio-button a {
+  position: relative;
+  margin-left: auto;
+  margin-right: 5%;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #7e7e7e;
+  border-radius: 50%;
+}
+
+.radio-button a:target {
+  background-color: #13a29c;
+  border-color: transparent;
+}
+
+@media screen and (max-width: 1500px) {
+  .radio-button {
+    margin-bottom: 12px;
+  }
+}

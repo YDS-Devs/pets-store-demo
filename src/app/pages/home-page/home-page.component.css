@@ -1,0 +1,94 @@
+.containerr {
+  display: grid;
+  grid-template-columns: 16.8% auto;
+  /* border: 3px solid lightgray; */
+  height: 100vh;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-rows: 21vh 79vh;
+  /* background-color: #2a2a2a; */
+}
+
+.grid21 {
+  display: grid;
+  grid-template-columns: 69% auto;
+  /* background-color: aqua; */
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.grid22 {
+  display: grid;
+  grid-template-columns: 20fr 80fr;
+  /* background-color: aquamarine; */
+}
+
+/* mobile view */
+@media screen and (max-width: 700px) {
+  .grid-web {
+    display: none;
+  }
+
+  .containerr {
+    grid-template: 15% auto / 100%;
+  }
+
+  .grid2 {
+    grid-template-rows: 40% auto;
+  }
+
+  .grid21 {
+    grid-template: 60% auto / 100%;
+  }
+
+  .grid22 {
+    grid-template: 15% auto / 100%;
+  }
+}
+
+/* web view */
+@media screen and (min-width: 701px) {
+  .grid-mob {
+    display: none;
+  }
+
+  .grid2 {
+    grid-column: 2;
+    padding-left: 8.1%;
+    background-color: #fff;
+    margin-right: 7%;
+  }
+
+  .grid21 {
+  }
+
+  .overflow {
+    overflow-x: auto;
+    /* padding-right: 17px; Increase/decrease this value for cross-browser compatibility */
+    /* box-sizing: content-box; So the width will be 100% + 17px */
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  .containerr {
+    overflow-y: hidden;
+  }
+
+  .border-right {
+    border-right: 1px solid #d3d3d3;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .grid2 {
+    display: grid;
+    grid-template-rows: 25vh 75vh;
+  }
+
+  .grid21 {
+    grid-template-columns: 68% auto;
+  }
+}

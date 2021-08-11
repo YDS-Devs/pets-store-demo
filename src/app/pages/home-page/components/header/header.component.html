@@ -1,0 +1,15 @@
+<div id="section1">
+  <div id="header">
+    <h1>Pet's Store</h1>
+    <p class="AID">AID</p>
+    <p class="code">A7636-0989-0900</p>
+  </div>
+
+  <div id="navbar">
+    <ul>
+      <li (click)="active(1)" [ngClass]="{'active': selectedItem === 1 }">Drugs</li>
+      <li (click)="active(2)" [ngClass]="{'active': selectedItem === 2}">Accessories</li>
+      <li (click)="active(3)" [ngClass]="{'active': selectedItem === 3 }">Food</li>
+    </ul>
+  </div>
+</div>

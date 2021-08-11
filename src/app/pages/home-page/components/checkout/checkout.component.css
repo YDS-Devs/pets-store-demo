@@ -1,0 +1,54 @@
+/* web view */
+@media screen and (min-width: 701px) {
+  #total-price {
+    padding-top: 127px;
+  }
+}
+
+#total-price {
+  display: flex;
+}
+
+#total-price > .total {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.total > .total2 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding-left: 7px;
+}
+
+#total-price > .checkout {
+  /* width: 38%; */
+  width: 211px;
+  height: 55px;
+  background-color: #18bab4;
+  margin-left: 10%;
+  margin-top: -2%;
+  color: #fff;
+  border-radius: 15px;
+  border: none;
+}
+
+.checkout svg {
+  margin-left: 27px;
+}
+
+@media screen and (max-width: 1500px) {
+  .checkout svg {
+    margin-left: 2px;
+  }
+
+  #total-price > .checkout {
+    /* width: 38%; */
+    width: 144px;
+    height: 45px;
+    margin-left: 10%;
+  }
+
+  #total-price {
+    padding-top: 108px;
+  }
+}
